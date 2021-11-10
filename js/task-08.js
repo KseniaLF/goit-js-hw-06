@@ -12,8 +12,8 @@ formEl.addEventListener("submit", event => {
 
     const result = {};
 
-    result[emailEl.name] = emailEl.value;
-    result[passwordlEl.name] = passwordlEl.value;
+    result[emailEl.name] = emailEl.value.trim();
+    result[passwordlEl.name] = passwordlEl.value.trim();
 
     console.log(result)
 
